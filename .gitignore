@@ -1,2 +1,7 @@
-/nemo-extensions-*.tar.gz
-/nemo-dropbox-*.src.rpm
+BUILD/*
+BUILDROOT/*
+RPMS/*
+SPECS/*
+SRPMS/*
+nemo-extensions*.tar.gz
+.directory
