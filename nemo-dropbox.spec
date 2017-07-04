@@ -9,7 +9,7 @@ Source0:    %url/archive/%{version}.tar.gz#/nemo-extensions-%{version}.tar.gz
 ExclusiveArch:  i686 x86_64
 
 BuildRequires:  nemo-devel
-BuildRequires:  python2-docutils
+BuildRequires:  python-docutils
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  pygobject2-devel
