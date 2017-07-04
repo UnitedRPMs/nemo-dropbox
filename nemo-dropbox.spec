@@ -55,7 +55,7 @@ rm -rf ${RPM_BUILD_ROOT}%{_datadir}
 
 %changelog
 
-* Mon Jul 03 2016 David Va <davidva AT tutanota DOT com> - 3.4.0-2
+* Mon Jul 03 2017 David Va <davidva AT tutanota DOT com> - 3.4.0-2
 - Upstream
 - Changed Requires of dropbox, UnitedRPMs does not provides a fool epoch tag of dropbox
 
