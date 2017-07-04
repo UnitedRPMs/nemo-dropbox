@@ -1,7 +1,7 @@
 Summary:    Dropbox extension for nemo
 Name:       nemo-dropbox
 Version:    3.4.0
-Release:    1%{?dist}
+Release:    2%{?dist}
 License:    GPLv2+ and LGPLv2+ and MIT
 URL:        https://github.com/linuxmint/nemo-extensions
 Source0:    %url/archive/%{version}.tar.gz#/nemo-extensions-%{version}.tar.gz
@@ -15,7 +15,7 @@ BuildRequires:  libtool
 BuildRequires:  pygobject2-devel
 BuildRequires:  pygtk2-devel
 
-Requires:       dropbox >= 1:2.10.0
+Requires:       dropbox 
 
 %description
 Dropbox extension for nemo file manager
@@ -54,6 +54,11 @@ rm -rf ${RPM_BUILD_ROOT}%{_datadir}
 
 
 %changelog
+
+* Mon Jul 03 2016 David Va <davidva AT tutanota DOT com> - 3.4.0-2
+- Upstream
+- Changed Requires of dropbox, UnitedRPMs does not provides a fool epoch tag of dropbox
+
 * Sun Jul 02 2017 Leigh Scott <leigh123linux@googlemail.com> - 3.4.0-1
 - update to 3.4.0
 
