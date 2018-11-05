@@ -1,6 +1,6 @@
 Summary:    Dropbox extension for nemo
 Name:       nemo-dropbox
-Version:    3.8.0
+Version:    4.0.0
 Release:    2%{?dist}
 License:    GPLv2+ and LGPLv2+ and MIT
 URL:        https://github.com/linuxmint/nemo-extensions
@@ -54,6 +54,9 @@ rm -rf ${RPM_BUILD_ROOT}%{_datadir}
 
 
 %changelog
+
+* Sun Nov 04 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 4.0.0-2 
+- Updated to 4.0.0
 
 * Thu May 03 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 3.8.0-2 
 - Updated to 3.8.0
