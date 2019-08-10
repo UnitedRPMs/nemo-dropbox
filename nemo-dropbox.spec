@@ -1,15 +1,18 @@
+%global commit 6ae27c60b1562b116620899cc8da6e1d79a8b9c3
+
 Summary:    Dropbox extension for nemo
 Name:       nemo-dropbox
-Version:    4.0.0
-Release:    2%{?dist}
+Version:    4.2.0
+Release:    7%{?dist}
 License:    GPLv2+ and LGPLv2+ and MIT
 URL:        https://github.com/linuxmint/nemo-extensions
-Source0:    %url/archive/%{version}.tar.gz#/nemo-extensions-%{version}.tar.gz
+Source0:    https://github.com/linuxmint/nemo-extensions/archive/%{commit}.tar.gz#/nemo-extensions-%{version}.tar.gz
+Patch:      python_fix.patch
 
 ExclusiveArch:  i686 x86_64
 
 BuildRequires:  nemo-devel
-BuildRequires:  python-docutils
+BuildRequires:  python2-docutils
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  pygobject2-devel
@@ -23,7 +26,7 @@ Dropbox allows you to sync your files online and across
 your computers automatically.
 
 %prep
-%autosetup -n nemo-extensions-%{version}
+%autosetup -n nemo-extensions-%{commit} -p1
 
 %build
 pushd nemo-dropbox
@@ -54,6 +57,9 @@ rm -rf ${RPM_BUILD_ROOT}%{_datadir}
 
 
 %changelog
+
+* Sat Aug 10 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 4.2.0-7 
+- Updated to 4.2.0
 
 * Sun Nov 04 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 4.0.0-2 
 - Updated to 4.0.0
